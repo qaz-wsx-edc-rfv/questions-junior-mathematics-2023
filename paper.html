@@ -11,7 +11,12 @@
     </style>
     <script type="text/javascript">
         function onloadPage() {
-            alert(window.location);
+
+            var location = decodeURIComponent(window.location);
+            var baseDir = location.split("#")[1];
+
+            var title = document.getElementById("div-title");
+            title.innerHTML = baseDir;
             var CNT = 30;
             var div = document.getElementById("div-nodes");
             for (var i = 1; i <= CNT; i++) {
@@ -29,15 +34,15 @@
             var location = decodeURIComponent(window.location);
             var baseDir = location.split("#")[1];
             var div = document.getElementById("div-content");
-            div.innerHTML = baseDir+"<img src=\"" +baseDir + index + "/question.png\" width=\"1080\" align=\"center\"/>";
+            div.innerHTML = "<img src=\"" +baseDir +"/"+ index + "/question.png\" width=\"850\" align=\"center\"/>";
         }
     </script>
 </head>
 <body onload="onloadPage();">
-    <table align="center" width="1080">
+    <table align="center" width="800">
         <tr>
             <th height="50">
-                试卷
+                <div id="div-title"></div>
             </th>
         </tr>
         <tr>
