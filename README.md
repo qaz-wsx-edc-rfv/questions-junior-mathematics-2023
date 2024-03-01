@@ -6,7 +6,7 @@
 
 ### 按照考点分类
 - [压轴题专项](IDXS/中考/数学/catalog-1-1.md)
-- [平面几何](IDXS/中考/数学/catalog-1-1.md)
+- [平面几何](IDXS/中考/数学/catalog-4-1.md)
 - [函数与方程](IDXS/中考/数学/catalog-2-1.md)
 - [不等式](IDXS/中考/数学/catalog-2-2.md)
 - [数与式的计算](IDXS/中考/数学/catalog-2-3.md)
